@@ -1,0 +1,37 @@
+Big O notation is special notation that tells you how fast an algorithm is. Let’s assume it takes 1 millisecond to check one element. With simple search, Bob
+has to check 100 elements, so the search takes 100 ms to run. On the other hand, he only has to check 7 elements with binary search (log2 100 is roughly 7), 
+so that search takes 7 ms to run. But realistically, the list will have more like a billion elements. If it does, how long will simple search take?
+
+because simple search took 100 ms with 100 elements, and binary search took 7 ms. So simple search will take 30 × 15 = 450 ms, right? Way under my threshold of 10
+seconds.” Bob decides to go with simple search. Is that the right choice? No. Turns out, Bob is wrong. Dead wrong. The run time for simple search with 1 billion 
+items will be 1 billion ms, which is 11 days! The problem is, the run times for binary search and simple search don’t grow at the same rate.
+      
+as the number of items increases, binary search takes a little more time to run. But simple search takes a lot more time to run. So as the list of numbers 
+gets bigger, binary search suddenly becomes a lot faster than simple search. Bob thought binary search was 15 times faster than simple search, but that’s not 
+correct. If the list has 1 billion items, it’s more like 33 million times faster. That’s why it’s not enough to know how long an algorithm takes to run—you 
+need to know how the running time increases as the list size increases.  
+
+The run time in Big O notation is O(n). Where are the seconds? There are none—Big O doesn’t tell you the speed in seconds. Big O notation lets you compare the 
+number of operations. It tells you how fast the algorithm grows.
+
+
+Suppose you’re using simple search to look for a person in the phone book. You know that simple search takes O(n) time to run, which means in the worst case, 
+you’ll have to look through every single entry in your phone book. In this case, you’re looking for Adit. This guy is the first entry in your phone book. So 
+you didn’t have to look at every entry—you found it on the first try. Did this algorithm take O(n) time? Or did it take O(1) time because you found the person on 
+the first try?
+      
+      
+Simple search still takes O(n) time. In this case, you found what you were looking for instantly. That’s the best-case scenario. But Big O notation is
+about the worst-case scenario. So you can say that, in the worst case, you’ll have to look at every entry in the phone book once.”
+   
+      
+Algorithm speed isn’t measured in seconds, but in growth of the number of operations. Instead, we talk about how quickly 
+the run time of an algorithm increases as the size of the input increases.Run time of algorithms is expressed in Big O 
+notation. O(log n) is faster than O(n), but it gets a lot faster as the list of items you’re searching grows.”
+
+Binary search is a lot faster than simple search. O(log n) is faster than O(n), but it gets a lot faster once the list
+of items you’re searching through grows. Algorithm speed isn’t measured in seconds. Algorithm times are measured in 
+terms of growth of an algorithm. Algorithm times are written in Big O notation.
+
+      
+      
