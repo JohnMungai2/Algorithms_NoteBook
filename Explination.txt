@@ -1,0 +1,19 @@
+When searching an orderd list for something our natural response is to search one value in the list at a time. This is 
+called a sequnential search. Although this method of search is the easiest to implement on an orderd list it is not the 
+most efficiant. When learning to program this method is appropiate for teaching some one how to search but as we learn
+more we find new ways to make search more effective. For example Binary search is a more effective way to search
+for an item in an orderd list. How exactly does binary search work. Lets say for example we have an orderd list of 
+numbers (works for words order aphabeticly too), and we wanted to find a number in that orderd list of numbers. Binary
+search solves this problem by taking the value of your current guess, comparing it to your target, and eliminating 
+portions of the list based on the guess being less than the target or more than the target. How does this work?
+think about it this way. if im looking for the number 20 in an orderd list of 10 numbers and i pull a random number out 
+of that list using its index, lets say index 5. Because our list is orderd if the number at index 5 is less than 20 than
+we can take the number at that index and every number under every index under our current one than we can eliminate 
+the possibility of 20 being equal to our guess number and every number after that. Same principle if our guess is greater
+than our current target. Since the list is orderd if our target is less than our guees than we can eliminate the 
+posibility of our target being equal to our guess or equal to any number above our guess. This Algorythem cuts the list 
+in half with every itiration. So instead of looking through one element at a time using sequential search which
+is taxing for very large list we only have to look through half the size of values we had too in the previous itiration
+this is called logorythmic time and growth. This means that a certain number of searches takes log(base 2) (n) + 1 rounded
+down, the number of items in a list being n. This means that If the list is 100 items long, it takes at most 7 guesses. 
+If the list is 4 billion items, it takes at most 32 guesses.
