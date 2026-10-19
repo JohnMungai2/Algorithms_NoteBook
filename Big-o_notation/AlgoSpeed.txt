@@ -18,6 +18,7 @@ number of operations. It tells you how fast the algorithm grows.
 Suppose you’re using simple search to look for a person in the phone book. You know that simple search takes O(n) time to run, which means in the worst case, 
 you’ll have to look through every single entry in your phone book. In this case, you’re looking for Adit. This guy is the first entry in your phone book. So 
 you didn’t have to look at every entry—you found it on the first try. Did this algorithm take O(n) time? Or did it take O(1) time because you found the person on 
+
 the first try?
       
       
