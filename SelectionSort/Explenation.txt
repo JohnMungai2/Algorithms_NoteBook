@@ -1,0 +1,5 @@
+the main premis behind selection sort is ordering each element in an array from smallest to largest. how this works 
+is that to find the smallest element we need to look through each element in the array to find it, and once we find it
+we need to take it and replace the element at the front of the list with the smallest element we have found. We repeat
+this process with the second and third and forth smallest elements and so on until the list is orderd from smallest to 
+largest.
