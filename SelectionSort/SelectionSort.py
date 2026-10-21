@@ -7,7 +7,7 @@ random_ints = [42, 17, 88, 3, 59, 91, 12, 76, 23, 65, 34, 8, 99, 51, 27, 44, 70,
 def selectionsort(list):
     k = 0
     for i in range(0, len(list) - 1):
-        for j in range(k, len(list)):
+        for j in range(k, len(list)): # k is slitly redundant
             PlaceHolder = None
             if list[i] > list[j]:
                 PlaceHolder = list[i]
