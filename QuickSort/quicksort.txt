@@ -1,0 +1,25 @@
+Remember, you’re using D&C. So you want to break down this array until you’re at the base case. Here’s how quicksort 
+works.First, pick an element from the array. This element is called the pivot. Now find the elements smaller than the 
+pivot and the elements larger than the pivot. then we add the numbers that are less than to one array and the 
+numbers greater than the pivot to a seprate array
+
+This is called partitioning. Now you have
+      
+- A sub-array of all the numbers less than the pivot
+- The pivot
+- A sub-array of all the numbers greater than the pivot
+
+The two sub-arrays aren’t sorted. They’re just partitioned. But if they were sorted, then sorting the whole array would
+be pretty easy.
+
+1.  Pick a pivot.
+2.  Partition the array into two sub-arrays: elements less than the pivot and elements greater than the pivot.
+3.  Call quicksort recursively on the two sub-arrays.
+      
+if you can sort an array of four elements, you can sort an array of five elements. Why is that? Suppose you have this 
+array of five elements.
+
+3,5,2,1,4
+      
+      
+      
